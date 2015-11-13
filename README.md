@@ -1,6 +1,9 @@
+![Move And Refactor](https://github.com/seedante/UIView-Refacotr-Destruct-Animation/blob/master/Move%20and%20Refactor.gif)
+![All Actions](https://github.com/seedante/UIView-Refacotr-Destruct-Animation/blob/master/All%20Actions.5.1M.gif)
+
 ## UIView Extension for Refactor and Destruct Animation
 
-A alternative for move animation and disappear animation. At the begining, I just want to create a image display animation after download it; after it's finished, I find it's not good for the scene, now this. And I use it in UICollectionView insert/delete/move item, here is the repo.
+A alternative for move animation and disappear animation. At the begining, I just want to create a image display animation after download it; after it's finished, I find it's not good for the scene, now this. And I use it in UICollectionView insert/delete/move item, here is the [repo](https://github.com/seedante/CollectionViewAnimation.git).
 
 ###Feature
 
@@ -31,7 +34,7 @@ Refactor API:
 	*/
 
 	func refactorWithNewFrame(destinationFrame: CGRect?, piecesRegion jumpRect: CGRect?, shiningColor: UIColor?, direction: SDERefactorDirection = .Horizontal, refactorTime animationTime: NSTimeInterval = 0.6, pieceRatio ratio: CGFloat = 0.04, enableBigRegion: Bool = false)
-	 /**
+	/**
      - parameter destinationFrame: the frame you want to change to. If you not specify this parameter, it will refactor self. I recommend that you change this from CGRect? to CGRect when you use.
      - parameter jumpRect:        the area where all pieces appear, if nil, is 2X frame of the view.
      - parameter shiningColor:    if you specify this parameter, add light like electric welding.
@@ -39,7 +42,7 @@ Refactor API:
      - parameter animationTime:   the total time of animation
      - parameter ratio:           the ratio which piece to view, here the ratio is used on width and height both.
      - parameter enableBigRegion: you will get 2X or 4X size of general piece if you enable it. I love this, and it can reduce the time of animation. I recommend just enable it if the view is big enough.
-     */
+    */
 
 
 Thanks to default parameter values in swift, you can get a refactor animation and just need to specify three parameter at most. You can ignore any default value parameter and don't need to keep them in old order.
@@ -54,15 +57,15 @@ Similar to refactor API. Only three parameters to custom.
 
 	func destruct()
 	/**
-	Add a destruct animation on with default paprameter values and remove it from its superview.
+	 Add a destruct animation on with default paprameter values and remove it from its superview.
 	*/
 	
 	func destructWithDirection(direction: SDERefactorDirection = .Diagonal, animationTime: NSTimeInterval = 0.5, pieceRatio ratio: CGFloat = 0.05)
-	 /**
-     Add a destruct animation on view and remove it from its superview.
-     - parameter direction:     animation direction
-     - parameter animationTime: animation time
-     - parameter ratio:         piece ratio to view. It apply to width and height both.
+	/**
+      Add a destruct animation on view and remove it from its superview.
+      - parameter direction:     animation direction
+      - parameter animationTime: animation time
+      - parameter ratio:         piece ratio to view. It apply to width and height both.
      */
 
 SampleCode:
