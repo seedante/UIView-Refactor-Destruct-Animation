@@ -1,9 +1,16 @@
+**Move Animation:**
+
 ![Move And Refactor](https://github.com/seedante/UIView-Refacotr-Destruct-Animation/blob/master/Move%20and%20Refactor.gif)
+
+**All Actions Animation:**
+
 ![All Actions](https://github.com/seedante/UIView-Refacotr-Destruct-Animation/blob/master/All%20Actions.5.1M.gif)
 
 ## UIView Extension for Refactor and Destruct Animation
 
-A alternative for move animation and disappear animation. At the begining, I just want to create a image display animation after download it; after it's finished, I find it's not good for the scene, now this. And I use it in UICollectionView insert/delete/move item, here is the [repo](https://github.com/seedante/CollectionViewAnimation.git).
+A alternative for move animation and disappear animation. At the begining, I just want to create a image display animation after download it; after it's finished, I find it's not good for the scene, now this. There are many things you can do with the algorithm of adjusting view pieces.
+
+I use it in UICollectionView insert/delete/move item, here is the [repo](https://github.com/seedante/CollectionViewAnimation.git). 
 
 ###Feature
 
@@ -77,8 +84,9 @@ SampleCode:
 Note: In destruct, the view is removed from its superview, if you don't want this, remember modify the code in the `windUp:` method.
 	
 ## UIView 扩展：重组和分解动画
-移动和消失动画的替代选择。这个动画最初只是用来图片下载完之后来个特效的，后来发现这个动画不是很合适。想做成科幻片里的传送特效那样子，还是偏得有点远了。UICollectionView 里新添加 cell 时非常适合使用重组动画，后来为了删除动画在又添加分解动画，repo 在这里。
-	
+移动和消失动画的替代选择。这个动画最初只是用来图片下载完之后来个特效的，后来发现这个动画不是很合适。想做成科幻片里的传送特效那样子，还是偏得有点远了。重组动画本身可玩性很大，你只需要调整下碎片的出现时间就能玩出很多花样来。
+
+UICollectionView 里新添加 cell 时非常适合使用重组动画，后来为了删除动画在又添加了分解动画，[介绍博客在这里](http://www.jianshu.com/p/4323c54ad643)，[repo 在这里](https://github.com/seedante/CollectionViewAnimation.git)。	
 ###特性：
 重组和分解动画都支持：
 
