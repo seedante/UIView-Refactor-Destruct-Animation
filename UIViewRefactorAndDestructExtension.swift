@@ -327,13 +327,9 @@ extension UIView {
     }
 
     private func randomRectFrom(sourceRect: CGRect, regionSize: CGSize) -> CGRect {
-
-        //let deltaBase = UInt32(min(min(sourceRect.width, sourceRect.height), 300.0))
-        //let delta = CGFloat(arc4random() % deltaBase)
-        //let factor: CGFloat = Int(UInt32(arc4random()) % UInt32(2)) == 1 ? -1.0 : 1.0
-
-        let randomX: CGFloat = sourceRect.origin.x - sourceRect.size.width / 2 + CGFloat(UInt32(arc4random()) % UInt32( 2.0 * sourceRect.size.width )) //+ factor * delta
-        let randomY: CGFloat = sourceRect.origin.y - sourceRect.size.height / 2 + CGFloat(UInt32(arc4random()) % UInt32( 2.0 * sourceRect.size.height )) //- factor * delta
+        //Now the method is like its name.
+        let randomX: CGFloat = sourceRect.origin.x + CGFloat(UInt32(arc4random()) % UInt32(sourceRect.size.width))
+        let randomY: CGFloat = sourceRect.origin.y + CGFloat(UInt32(arc4random()) % UInt32(sourceRect.size.height))
 
         let initialFrame = CGRect(x: randomX, y: randomY, width: regionSize.width, height: regionSize.height)
 
