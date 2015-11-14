@@ -37,7 +37,7 @@ Refactor API:
 
 	func refactor()
 	/**
-	Refactoring a view in place use default parameter value.
+	 Refactoring a view in place use default parameter value.
 	*/
 
 	func refactorWithNewFrame(destinationFrame: CGRect?, piecesRegion jumpRect: CGRect?, shiningColor: UIColor?, direction: SDERefactorDirection = .Horizontal, refactorTime animationTime: NSTimeInterval = 0.6, pieceRatio ratio: CGFloat = 0.04, enableBigRegion: Bool = false)
@@ -69,11 +69,11 @@ Similar to refactor API. Only three parameters to custom.
 	
 	func destructWithDirection(direction: SDERefactorDirection = .Diagonal, animationTime: NSTimeInterval = 0.5, pieceRatio ratio: CGFloat = 0.05)
 	/**
-      Add a destruct animation on view and remove it from its superview.
-      - parameter direction:     animation direction
-      - parameter animationTime: animation time
-      - parameter ratio:         piece ratio to view. It apply to width and height both.
-     */
+     Add a destruct animation on view and remove it from its superview.
+     - parameter direction:     animation direction
+     - parameter animationTime: animation time
+     - parameter ratio:         piece ratio to view. It apply to width and height both.
+    */
 
 SampleCode:
 
